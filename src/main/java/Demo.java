@@ -57,7 +57,7 @@ public HashMap<String,String> XMLParser()
 		try{
 			 DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			 DocumentBuilder builder = factory.newDocumentBuilder();
-			 Document document = builder.parse(new File("/data/brexit/xlime_newsfeed_en_90001-92500.xml"));
+			 Document document = builder.parse(new File("xlime_newsfeed_en_90001-92500.xml"));
 			 document.getDocumentElement().normalize();
 			 System.out.println("Root element :" + document.getDocumentElement().getNodeName());
 			 NodeList nList = document.getElementsByTagName("item");
