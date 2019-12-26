@@ -1,0 +1,41 @@
+CS 753/853: Topics / Information Retrieval Fall 2019
+
+Information Retrieval Project
+
+Requirements:
+Maven 3.6.0
+Java 11.0.4
+Lucene 8.2.0
+
+Running:
+
+clone repository
+
+git clone https://gitlab.cs.unh.edu/cs753-853-2019/team-8.git
+
+cd team8/IR-Project
+
+To run this programon Linux, Maven has to be installed
+
+Instructions to install Maven:
+
+sudo apt install maven
+
+To compile this program, run the following command:
+
+mvn clean compile assembly:single
+
+#Gayathri's and Stavan's code are integrated, Dhawal's code couldn't be integrated hence it needs to be executed seperately
+
+#To run Gayathri's and Stavan's code:
+
+java -Xmx50g -cp target/IR-Lucene-0.0.1-SNAPSHOT-jar-with-dependencies.jar Main
+
+To run Dhawal's code:
+
+Please change the below line in properties.xml with the path in your machine.
+<param name="dictionary_path" value="C:\Users\dhawa\Desktop\team-8\IR-Project\dict"/>
+
+java -Xmx50g -cp target/IR-Lucene-0.0.1-SNAPSHOT-jar-with-dependencies.jar Main2
+
+Run files will be created for all models.
